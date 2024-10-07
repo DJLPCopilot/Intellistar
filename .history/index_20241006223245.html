@@ -25,7 +25,7 @@
             <img class="bg-image" src="./images/bg/bg1.png" alt="Background Image">
         </div>
         <!-- Current Conditions Slide -->
-        <div id="nextslide" class="absolute-position">
+        <div id="nextslide" style="position: absolute;">
             <img class="panel" src="./images/panels/cc.png" class="panel-image" alt="Current Conditions Panel" title="Current Conditions Panel">
             <div class="slideplaceholder">Now</div>
             <button id="nextslidebutton" onclick="myFunction()">Next Slide</button>
@@ -43,24 +43,39 @@
                 <div class="name">HUMIDITY</div>
                 <div id="humidity" class="value">83%</div>
                 <!-- Dew Point -->
-                <div class="name dew-point">DEW POINT</div>
-                <div id="dewpoint" class="value dew-point-value">25&deg;</div>
+                <div class="name"
+                    style="margin-top: 60px; display: flex; margin-right: 15px; font-size: 22px; width: 250px;">DEW
+                    POINT</div>
+                <div id="dewpoint" style="margin-top: 50px;" class="value">25&deg;</div>
                 <!-- Pressure -->
-                <div class="name pressure">PRESSURE</div>
-                <div id="pressure" class="value pressure-value">30.31 <div id="pressunit" class="small">INCHES</div>S</div>
-                <div class="name visibility">VISIBILITY</div>
-                <div id="visibility" class="value visibility-value">10<div class="small">MILES</div></div>
-                <div class="name wind">WIND</div>
-                <div id="wind" class="value wind-value">NE 1</div>
-                <div class="name gusts">GUSTS</div>
-                <div id="gusts" class="value gusts-value">None</div>
-                <div class="name feels-like">FEELS LIKE</div>
-                <div id="feelslike" class="value feels-like-value">28&deg;</div>
+                <div class="name"
+                    style="margin-top: 107px; display: flex; margin-right: 15px; font-size: 22px; width: fit-content;">
+                    PRESSURE</div>
+                <div id="pressure" style="margin-top: 100px;" class="value">30.31 <div id="pressunit" class="small">
+                        INCHES</div>S</div>
+                <div class="name"
+                    style="margin-top: 153px; display: flex; margin-right: 15px; font-size: 22px; width: fit-content;">
+                    VISIBILITY</div>
+                <div id="visibility" style="margin-top: 144px;" class="value">10<div class="small">MILES</div>
+                </div>
+                <div class="name"
+                    style="margin-top: 198px; display: flex; margin-left: 65px; font-size: 22px; width: fit-content;">
+                    WIND</div>
+                <div id="wind" style="margin-top: 191px; width: 277px;" class="value">NE 1</div>
+                <div class="name"
+                    style="margin-top: 246px; display: flex; margin-left: 50px; font-size: 22px; width: fit-content;">
+                    GUSTS</div>
+                <div id="gusts" style="margin-top: 236px; width: 133px;" class="value">None</div>
+                <div class="name"
+                    style="margin-top: 292px; display: flex; margin-left: -10px; font-size: 22px; width: 250px;">FEELS
+                    LIKE</div>
+                <div id="feelslike" style="margin-top: 283px; width: 133px;" class="value">28&deg;</div>
             </div>
         </div>
         <div id="alertslide" class="alert-slide">
-            <div class="slideplaceholder weather-bulletin">Weather Bulletin</div>
-            <button id="radarbutton" onclick="radar()">Next Slide</button>
+            <div class="slideplaceholder"
+                style="letter-spacing: 1.6px;width: 660px;margin-top: 40px;margin-left: 46px;">Weather Bulletin</div>
+            <button id="radarbutton" style="position: absolute;" onclick="radar()">Next Slide</button>
             <img class="bulletinpanel" src="./images/panels/bulletin.png" title="Bulletin Panel">
             <div class="alert" id="alerttext">No Alert.</div>
             <p class="nwstextbulletin">The National Weather Service</p>
@@ -70,15 +85,17 @@
         <div class="radarcontainer" id="radarslide">
             <div id="mapboxmap"></div>
             <div class="mosaicthing" id="radarimagery"></div>
-            <button id="forecastslidebutton4" class="forecast-slide-button" onclick="forecastslide()">Next Slide.</button>
-            <img class="radarpanel" src="./images/panels/radarpanel.png" alt="Radar Panel"></img>
-            <div class="slideplaceholder regional-radar">Regional Radar</div>
-            <div class="rainlegend" id="rain">rain</div>
-            <img class="rainimg" src="./images/panels/radar.png" alt="Radar Image">
+            <button id="forecastslidebutton" style="position: absolute;" onclick="forecastslide()">Next Slide.</button>
+            <img class="radarpanel" src="./images/panels/radarpanel.png"></img>
+            <div class="slideplaceholder" style="width: 660px; margin-top: 42px;">Regional Radar</div>
+            <div class="rainlegend" id="rain"
+                style="position: absolute; color: #4d6a81; margin-left: 63px; margin-top: 85px; font-size: 21px;">rain
+            </div>
+            <img class="rainimg" src="./images/panels/radar.png">
         </div>
         <div class="almanac" id="almanacslide">
             <div class="almanacpanel">
-                <div class="slideplaceholder almanac-style">Almanac
+                <div class="slideplaceholder" style="margin-top: -52px; margin-left: 12px; font-size: 38px;">Almanac
                 </div>
                 <div class="sunrisesunsettimes">
                     <div class="dayofweek001" id="almanacday0">TUESDAY</div>
@@ -87,8 +104,8 @@
                     <div class="sunsetn">SUNSET</div>
                     <div id="sunrise0" class="sunrisep">8:04 am</div>
                     <div id="sunset0" class="sunsetp">5:25 pm</div>
-                    <div id="sunrise1" class="sunrisep sunrise1">8:04 am</div>
-                    <div id="sunset1" class="sunsetp sunset1">5:26 pm</div>
+                    <div id="sunrise1" style="margin-left: 333px;" class="sunrisep">8:04 am</div>
+                    <div id="sunset1" style="margin-left: 333px;" class="sunsetp">5:26 pm</div>
                 </div>
                 <div class="lowerplaceholder">
                     <div class="stationname" id="station"></div>
@@ -110,105 +127,105 @@
                     <div class="recordminy" id="minyear">1883</div>
                     <div class="recordmin" id="rmin">-13</div>
                 </div>
-                <img class="almanac-image" src="./images/panels/almanac.png" alt="Almanac Panel" title="Almanac Panel">
+                <img style="width: 645px; height: 349px" src="./images/panels/almanac.png">
             </div>
-            <button id="forecastslidebutton2a" class="forecast-slide-button" onclick="forecastslidee()">Next Slide.</button>
+            <button id="forecastslidebutton" style="position: absolute;" onclick="forecastslidee()">Next Slide.</button>
         </div>
         <div class="forecastcontainer" id="forecastpanel">
             <div class="forecastpanel">
-                <div class="slideplaceholder local-forecast">Local
+                <div class="slideplaceholder" style="margin-top: -52px; margin-left: 8px; font-size: 38px;">Local
                     Forecast
                 </div>
-                <div class="city" id="citynf">WASHINGTON</div>
+                <div class="city" id="citynf" style="top: 4.11px; margin-left: 6px;">WASHINGTON</div>
                 <div class="dayname" id="daypartn1">Tonight</div>
                 <div class="forecast" id="forecast1">Partly cloudy. Low 32. Winds W at 5 to 10 mph.</div>
-                <img src="./images/panels/forecast.png" title="Forecast Panel">
+                <img src="./images/panels/forecast.png">
                 </img>
-                <button id="forecastslidebutton" class="absolute-position" onclick="forecastslide1()">Next
+                <button id="forecastslidebutton" style="position: absolute;" onclick="forecastslide1()">Next
                     Slide.</button>
             </div>
         </div>
         <div class="forecastcontainer" id="forecastpanel1">
             <div class="forecastpanel">
-                <div class="slideplaceholder local-forecast-style">Local
+                <div class="slideplaceholder" style="margin-top: -52px; margin-left: 8px; font-size: 38px;">Local
                     Forecast</div>
-                <div class="city" id="citynf1">WASHINGTON</div>
+                <div class="city" id="citynf1" style="top: 4.11px; margin-left: 6px;">WASHINGTON</div>
                 <div class="dayname" id="daypartn2">Tommorow</div>
                 <div class="forecast" id="forecast2">Sunny. </div>
-                <img src="./images/panels/forecast.png" title="Forecast Panel">
+                <img src="./images/panels/forecast.png">
                 </img>
-                <button id="forecastslidebutton1" class="absolute-position" onclick="forecastslide2()">Next
+                <button id="forecastslidebutton1" style="position: absolute;" onclick="forecastslide2()">Next
                     Slide.</button>
             </div>
         </div>
         <div class="forecastcontainer" id="forecastpanel2">
             <div class="forecastpanel">
-                <div class="slideplaceholder local-forecast-style">Local
+                <div class="slideplaceholder" style="margin-top: -52px; margin-left: 8px; font-size: 38px;">Local
                     Forecast</div>
-                <div class="city city-custom" id="citynf2">WASHINGTON</div>
+                <div class="city" id="citynf2" style="top: 4.11px; margin-left: 6px;">WASHINGTON</div>
                 <div class="dayname" id="daypartn3">Tonight</div>
                 <div class="forecast" id="forecast3">Partly cloudy. Low 32. Winds W at 5 to 10 mph.</div>
-                <img src="./images/panels/forecast.png" title="Forecast Panel">
+                <img src="./images/panels/forecast.png">
                 </img>
-                <button id="forecastslidebutton2" class="absolute-position" onclick="forecastslide3()">Next
+                <button id="forecastslidebutton2" style="position: absolute;" onclick="forecastslide3()">Next
                     Slide.</button>
             </div>
         </div>
         <div class="extendedcontainer" id="extendedforecast">
-            <button id="forecastslidebutton3" class="absolute-position" onclick="redirect()">Restart the
+            <button id="forecastslidebutton3" style="position: absolute;" onclick="redirect()">Restart the
                 Emulator.</button>
-            <div class="slideplaceholder week-ahead">The Week Ahead
+            <div class="slideplaceholder" style="margin-top: 38px;margin-left: 67px;font-size: 38px;">The Week Ahead
             </div>
             <div class="citynames">
                 <div class="ename" id="ename0">MON</div>
-                <div class="ename" id="ename1">TUE</div>
-                <div class="ename ename2" id="ename2">WED</div>
-                <div class="ename ename3" id="ename3">THU</div>
-                <div class="ename ename4" id="ename4">FRI</div>
-                <div class="ename ename5" id="ename5">SAT</div>
-                <div class="ename ename6" id="ename6">SUN</div>
+                <div class="ename" id="ename1" style="margin-left: 175px;">TUE</div>
+                <div class="ename" id="ename2" style="margin-left: 259px;">WED</div>
+                <div class="ename" id="ename3" style="margin-left: 354px;">THU</div>
+                <div class="ename" id="ename4" style="margin-left: 452px;">FRI</div>
+                <div class="ename" id="ename5" style="margin-left: 540px;">SAT</div>
+                <div class="ename" id="ename6" style="margin-left: 633px;">SUN</div>
             </div>
             <div class="icons" id="icons">
-                <img id="icon0" src="/images/icons/2007/32.gif" alt="Weather Icon">
-                <img id="icon1" class="icon-style" src="/images/icons/2007/32.gif" alt="Weather Icon" title="Weather Icon">
-                <img id="icon2" class="icon-style" src="/images/icons/2007/32.gif" alt="Weather Icon" title="Weather Icon">
-                <img id="icon3" class="icon-style" src="/images/icons/2007/32.gif" alt="Weather Icon" title="Weather Icon">
-                <img id="icon4" class="icon-style" src="/images/icons/2007/32.gif" alt="Weather Icon" title="Weather Icon">
-                <img id="icon5" class="icon-style" src="/images/icons/2007/32.gif" alt="Weather Icon" title="Weather Icon">
-                <img id="icon6" class="icon-style" src="/images/icons/2007/32.gif" alt="Weather Icon" title="Weather Icon">
+                <img id="icon0" src="/images/icons/2007/32.gif">
+                <img id="icon1" style="margin-left: 151px" src="/images/icons/2007/32.gif">
+                <img id="icon2" style="margin-left: 246px" src="/images/icons/2007/32.gif">
+                <img id="icon3" style="margin-left: 336px;" src="/images/icons/2007/32.gif">
+                <img id="icon4" style="margin-left: 428px;" src="/images/icons/2007/32.gif">
+                <img id="icon5" style="margin-left: 519px;" src="/images/icons/2007/32.gif">
+                <img id="icon6" style="margin-left: 614px;" src="/images/icons/2007/32.gif">
             </div>
             <div id="conditions" class="conditionlist">
                 <div class="condition" id="weather00">Partly Cloudy</div>
-                <div class="condition" id="weather01">PM Showers</div>
-                <div class="condition" id="weather02">Partly Cloudy</div>
-                <div class="condition" id="weather03">Few Showers</div>
-                <div class="condition" id="weather04">Cloudy</div>
-                <div class="condition" id="weather05">Showers</div>
-                <div class="condition" id="weather06">Partly Cloudy</div>
+                <div class="condition" id="weather01" style="margin-left: 67px;">PM Showers</div>
+                <div class="condition" id="weather02" style="margin-left: 159px;">Partly Cloudy</div>
+                <div class="condition" id="weather03" style="margin-left: 250px;">Few Showers</div>
+                <div class="condition" id="weather04" style="margin-left: 338px;">Cloudy</div>
+                <div class="condition" id="weather05" style="margin-left: 417px;">Showers</div>
+                <div class="condition" id="weather06" style="margin-left: 521px;">Partly Cloudy</div>
 
             </div>
             <div class="temperaturelist" id="temps">
                 <div class="hightemps" id="hightemplist">
                     <div class="hightemp" id="hi0">44</div>
-                    <div class="hightemp hightemp-1" id="hi1">47</div>
-                    <div class="hightemp hightemp-2" id="hi2">47</div>
-                    <div class="hightemp hightemp-3" id="hi3">44</div>
-                    <div class="hightemp hightemp-4" id="hi4">50</div>
-                    <div class="hightemp hightemp-5" id="hi5">44</div>
-                    <div class="hightemp" id="hi6">45</div>
+                    <div class="hightemp" id="hi1" style="margin-left: 93px;">47</div>
+                    <div class="hightemp" id="hi2" style="margin-left: 181px;">47</div>
+                    <div class="hightemp" id="hi3" style="margin-left: 275px;">44</div>
+                    <div class="hightemp" id="hi4" style="margin-left: 367px;">50</div>
+                    <div class="hightemp" id="hi5" style="margin-left: 457px;">44</div>
+                    <div class="hightemp" id="hi6" style="margin-left: 546px;">45</div>
                 </div>
                 <div class="lowtemps" id="lowtemps">
                     <div class="lowtemp" id="lo0">32</div>
-                    <div class="lowtemp lowtemp-1" id="lo1">31</div>
-                    <div class="lowtemp lowtemp-2" id="lo2">32</div>
-                    <div class="lowtemp lowtemp-3" id="lo3">32</div>
-                    <div class="lowtemp lowtemp-margin-left-367" id="lo4">39</div>
-                    <div class="lowtemp lowtemp-margin-left-457" id="lo5">36</div>
-                    <div class="lowtemp lowtemp-margin-left-546" id="lo6">38</div>
+                    <div class="lowtemp" id="lo1" style="margin-left: 93px;">31</div>
+                    <div class="lowtemp" id="lo2" style="margin-left: 181px;">32</div>
+                    <div class="lowtemp" id="lo3" style="margin-left: 275px;">32</div>
+                    <div class="lowtemp" id="lo4" style="margin-left: 367px;">39</div>
+                    <div class="lowtemp" id="lo5" style="margin-left: 457px;">36</div>
+                    <div class="lowtemp" id="lo6" style="margin-left: 546px;">38</div>
                 </div>
             </div>
-            <img class="extendedpanel" src="./images/panels/extended.png" alt="Extended Forecast Panel">
-            <div class="city citynamee" id="citynamee">WASHINGTON</div>
+            <img class="extendedpanel" src="./images/panels/extended.png">
+            <div class="city" id="citynamee" style="top: 94.11px;margin-left: 59px;">WASHINGTON</div>
         </div>
     </div>
     </div>

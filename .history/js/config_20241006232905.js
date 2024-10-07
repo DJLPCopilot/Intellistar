@@ -14,7 +14,7 @@ var timezone = "America/New_York"
  var lat = "28.4831649" // Latitude. You can head over to www.google.com/maps/ and right click on a spot on the map for your cordinates.
  var lon = "-82.53698" // Longitude.
  // Icon Configuration
- var icons = "2010"; // Types are 2007, 2010, and XL
+ var icons = "XL"; // Types are 2007, 2010, and XL
  var filet = `png` // gif or png. No period included
 
  // Backgrounds

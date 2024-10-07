@@ -2,7 +2,7 @@
 // Observations Slide
 // Input your api-key
 
-var api_key = 'dec16299b04ab33143fa00b253f18ca51a4669801300b3457f6bd968a5f6f96a`;'
+var api_key = 'dec16299b04ab33143fa00b253f18ca51a4669801300b3457f6bd968a5f6f96a`; 
 // Input your mapbox key.
  var map_key = `pk.eyJ1IjoiaGFzdHl0dWJlIiwiYSI6ImNsa2hkZTh6bzAwazQzZHFyNmF5aTRsZGwifQ.5QJvYIHo0odZ5jCFApV7yw`
 
@@ -14,7 +14,7 @@ var timezone = "America/New_York"
  var lat = "28.4831649" // Latitude. You can head over to www.google.com/maps/ and right click on a spot on the map for your cordinates.
  var lon = "-82.53698" // Longitude.
  // Icon Configuration
- var icons = "2010"; // Types are 2007, 2010, and XL
+ var icons = "XL"; // Types are 2007, 2010, and XL
  var filet = `png` // gif or png. No period included
 
  // Backgrounds
